@@ -17,9 +17,9 @@ const People = ({ people }: any) => {
       {status === 'loading' && <div>Loading...</div>}
       {status === 'error' && <div>Error fetching data!</div>}
       {status === 'success' &&
-        data.results.map((peopele: any) => (
+        data.results.map((people: any) => (
           <div key={people.name} className="p-20 border shadow-sm m-4">
-            {peopele.name}
+            {people.name}
           </div>
         ))}
     </div>
